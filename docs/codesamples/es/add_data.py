@@ -14,7 +14,7 @@ project_client = AIProjectClient(
     credential=DefaultAzureCredential()
 )
 
-DOCS_DIR = "../documentos"
+DOCS_DIR = "./documentos"
 
 if not os.path.isdir(DOCS_DIR):
     raise FileNotFoundError(
@@ -37,7 +37,7 @@ for fname in os.listdir(DOCS_DIR):
 
 print(f"Se subieron {len(file_ids)} archivos.")
 if not file_ids:
-    raise RuntimeError("No se subieron archivos. Coloca archivos en ../documentos y vuelve a ejecutar.")
+    raise RuntimeError("No se subieron archivos. Coloca archivos en ./documentos y vuelve a ejecutar.")
 
 
 vector_store = project_client.agents.vector_stores.create_and_poll(

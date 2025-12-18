@@ -67,12 +67,12 @@ Esto conecta tu script a tu proyecto de Microsoft Foundry, permitiendo que las s
 
 ### Parte C - Subir Tus Documentos  
 
-**Objetivo:** Subir archivos desde `../documentos` y recopilar sus IDs.  
+**Objetivo:** Subir archivos desde `./documentos` y recopilar sus IDs.  
 
 Agrega esto:  
 
 ```python
-DOCS_DIR = "../documentos"
+DOCS_DIR = "./documentos"
 
 if not os.path.isdir(DOCS_DIR):
     raise FileNotFoundError(
@@ -95,7 +95,7 @@ for fname in os.listdir(DOCS_DIR):
 
 print(f"Se subieron {len(file_ids)} archivos.")
 if not file_ids:
-    raise RuntimeError("No se subieron archivos. Coloca archivos en ../documentos y vuelve a ejecutar.")
+    raise RuntimeError("No se subieron archivos. Coloca archivos en ./documentos y vuelve a ejecutar.")
 ```
 
 **Por qué:**  
@@ -156,7 +156,7 @@ python add_data.py
 Salida de ejemplo:  
 
 ```
-Subiendo archivos desde ../documentos ...
+Subiendo archivos desde ./documentos ...
 Se subieron 19 archivos.
 Vector store creado, ID: vs_ii6H96sVMeQcXICvj7e3DsrK
 Lote de archivos del vector store creado, ID: vsfb_47c68422adc24e0a915d0d14ca71a3cf
