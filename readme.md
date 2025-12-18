@@ -1,5 +1,7 @@
 # Microsoft Foundry Agent Workshop 🚀  
 
+**English** | **[Español](readme.es.md)**
+
 ![](./docs/public/banner.png)
 
 ## Workshop Overview  
