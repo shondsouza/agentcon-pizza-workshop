@@ -40,7 +40,7 @@ By the end of the workshop, you’ll have built your own **Contoso PizzaBot**, a
 
 - A browser and access to the [Azure Portal](https://portal.azure.com)  
 - An [Azure subscription](./get-azure) provided or use your own
-- A [developement environment](./dev-environment) with Python 3.10+ installed  
+- A [development environment](./dev-environment) with Python 3.10+ installed  
 - Familiarity with Python basics (no deep AI background required!)  
 
 ## Workshop Goal  
